@@ -34,7 +34,7 @@ Hasil: `<div id='ILOVEBLOGGER'></div>`
 Hasil jika benar: `<div style='background: transparent'></div>`
 Hasil jika salah: `<div></div>`
 
-### Atribut dengan Ekspresi
+### Atribut dengan Expression
 ```
 <a>
   <b:attr name='href' expr:value='data:blog.homepageUrl path "/search/" params { label: "TOTO" }' />
