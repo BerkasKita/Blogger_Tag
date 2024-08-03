@@ -9,7 +9,7 @@ Tag `<b:eval`> di Blogger digunakan untuk menampilkan nilai hasil dari ekspresi 
 ```
 
 ## Atribut
-+ `expr` : Satu-satunya atribut yang diterima. Nilai yang diharapkan bisa berupa nilai eksplisit, data, atau ekspresi Blogger.
++ `expr` : Satu-satunya atribut yang diterima. Nilai yang diharapkan bisa berupa nilai Expression, data, atau ekspresi Blogger.
 
 ## Contoh Penggunaan
 
