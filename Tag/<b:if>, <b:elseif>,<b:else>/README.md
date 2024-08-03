@@ -1,4 +1,4 @@
-# Penjelasan dan Contoh Penggunaan <b:if>, <b:elseif>, <b:else> dalam Blogger
+# Panduan Penggunaan Tag <b:if>, <b:elseif>, <b:else> dalam Blogger
 
 ## Deskripsi
 Tag kondisional dalam Blogger meliputi <b:if>, <b:elseif>, dan <b:else>. Tag ini digunakan untuk mengeksekusi atau tidak mengeksekusi blok kode dalam editor XML Blogger berdasarkan kondisi yang diberikan.
