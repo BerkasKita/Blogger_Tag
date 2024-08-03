@@ -5,10 +5,8 @@ Tag `<b:comment>` dalam Blogger adalah tag instruksi XML yang berguna untuk mena
 ## Sintaks Dasar
 
 Sintaks dasar untuk menggunakan tag `<b:comment>` adalah sebagai berikut:
-```
-<b:comment>
-  KOMENTAR ANDA DI SINI
-</b:comment>
+```xml
+<b:comment>KOMENTAR ANDA DI SINI</b:comment>
 ```
 
 Tag ini dapat digunakan di seluruh kode XML kecuali di dalam tag `<![CDATA[ ]]>`. Anda dapat menggunakan beberapa tag `<b:comment>`, tetapi tag ini tidak dapat di-nesting.
@@ -20,23 +18,19 @@ Tag ini dapat digunakan di seluruh kode XML kecuali di dalam tag `<![CDATA[ ]]>`
 ## Contoh Penggunaan
 
 ### Komentar yang Dirender dalam HTML
-```
-<b:comment render='true'>
-  Komen anda disini.
-</b:comment>
+```xml
+<b:comment render='true'>Komen anda disini.</b:comment>
 ```
 Hasil: `<!--Komen anda disini.-->`
 
 ### Komentar yang tidak Dirender dalam HTML
-```
-<b:comment render='false'>
-  Komen anda disini.
-</b:comment>
+```xml
+<b:comment render='false'>Komen anda disini.</b:comment>
 ```
 Hasil: Tidak ada/Tidak Tampil
 
 ### Komentar Berdasarkan Expression
-```
+```xml
 <b:comment render='true'>
   <b:eval expr='data:view.isHomepage ? "Anda dalam halaman utama." : "Anda diluar halaman utama."' />
 </b:comment>
