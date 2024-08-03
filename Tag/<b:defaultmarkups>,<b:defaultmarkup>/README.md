@@ -26,7 +26,7 @@ Tag ini berisi penyertaan untuk widget tertentu, yang didefinisikan oleh atribut
 ## Contoh Penggunaan
 
 ### Widget Tunggal
-```
+```xml
 <b:defaultmarkups>
   <b:defaultmarkup type='Profile'>
     <b:includable id='main'>
@@ -37,7 +37,7 @@ Tag ini berisi penyertaan untuk widget tertentu, yang didefinisikan oleh atribut
 ```
 
 ### Beberapa Widget
-```
+```xml
 <b:defaultmarkups>
   <b:defaultmarkup type='Blog, FeaturedPost, PopularPosts'>
     <b:includable id='main'>
@@ -48,7 +48,7 @@ Tag ini berisi penyertaan untuk widget tertentu, yang didefinisikan oleh atribut
 ```
 
 ### Beberapa Penyertaan dalam Satu Widget
-```
+```xml
 <b:defaultmarkups>
   <b:defaultmarkup type='Blog'>
     <b:includable id='main'>
@@ -62,7 +62,7 @@ Tag ini berisi penyertaan untuk widget tertentu, yang didefinisikan oleh atribut
 ```
 
 ### Membuat Penyertaan Umum
-```
+```xml
 <b:defaultmarkups>
   <b:defaultmarkup type='Common'>
     <b:includable id='MyMetaTags'>
