@@ -3,7 +3,7 @@
 Tag `<b:class>` adalah tag instruksi di XML yang digunakan untuk menambahkan nilai ke atribut `class` pada elemen induknya dalam Blogger. Tag ini sangat berguna dalam pengembangan tema dan tata letak pada platform Blogger.
 
 ## Sintaks Dasar
-```
+```xml
 <div>
   <b:class cond='CONDITION' name='CLASS_NAME' />
 </div>
@@ -17,7 +17,7 @@ Tag ini bekerja di seluruh kode XML kecuali di dalam markup `<![CDATA[`. Beberap
 ## Contoh Penggunaan
 
 ### Menambahkan Class Sederhana
-```
+```xml
 <div>
   <b:class name='footer' />
 </div>
@@ -25,7 +25,7 @@ Tag ini bekerja di seluruh kode XML kecuali di dalam markup `<![CDATA[`. Beberap
 Hasil: `<div class='footer'></div>`
 
 ### Menambahkan Class dengan Kondisi
-```
+```xml
 <div>
   <b:class cond='data:view.isHomepage' name='footer' />
 </div>
@@ -34,7 +34,7 @@ Hasil jika kondisi benar: `<div class='footer'></div>`
 Hasil jika kondisi salah: `<div></div>`
 
 ### Menambahkan Class ke Class yang Sudah Ada
-```
+```xml
 <div class='section'>
   <b:class name='footer' />
 </div>
@@ -42,7 +42,7 @@ Hasil jika kondisi salah: `<div></div>`
 Hasil: `<div class='section footer'></div>`
 
 ### Menggabungkan Beberapa Class
-```
+```xml
 <div class='section'>
   <b:class name='footer' />
   <b:class name='left' />
@@ -51,7 +51,7 @@ Hasil: `<div class='section footer'></div>`
 Hasil: `<div class='section footer left'></div>`
 
 ### Menambahkan Class Variabel
-```
+```xml
 <div>
   <b:class expr:name='data:view.isHomepage ? "superfooter" : "footer"' />
 </div>
