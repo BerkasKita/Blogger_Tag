@@ -4,7 +4,7 @@
 Tag `<b:attr>` dalam Blogger digunakan untuk menambahkan atribut ke tag induk dalam kode XML tema Blogger. Tag ini sangat fleksibel dan dapat digunakan dengan berbagai kondisi dan nilai.
 
 ## Sintaks
-```
+```xml
 <div>
   <b:attr cond='KONDISI' name='NAMA_ATRIBUT' value='NILAI' />
 </div>
@@ -18,7 +18,7 @@ Tag `<b:attr>` dalam Blogger digunakan untuk menambahkan atribut ke tag induk da
 ## Contoh
 
 ### Menambahkan ID
-```
+```xml
 <div>
   <b:attr name='id' value='ILOVEBLOGGER' />
 </div>
@@ -26,7 +26,7 @@ Tag `<b:attr>` dalam Blogger digunakan untuk menambahkan atribut ke tag induk da
 Hasil: `<div id='ILOVEBLOGGER'></div>`
 
 ### Atribut Kondisional
-```
+```xml
 <div>
   <b:attr cond='data:view.isHomepage' name='style' value='background: transparent' />
 </div>
@@ -35,7 +35,7 @@ Hasil jika benar: `<div style='background: transparent'></div>`
 Hasil jika salah: `<div></div>`
 
 ### Atribut dengan Expression
-```
+```xml
 <a>
   <b:attr name='href' expr:value='data:blog.homepageUrl path "/search/" params { label: "TOTO" }' />
   LINK
@@ -44,7 +44,7 @@ Hasil jika salah: `<div></div>`
 Hasil: `<a href='https://BLOG_NAME.blogspot.com/search?label=TOTO'>LINK</a>`
 
 ### Beberapa Atribut
-```
+```xml
 <a>
   <b:attr name='href' expr:value='data:view.url' />
   <b:attr name='target' value='_blank' />
