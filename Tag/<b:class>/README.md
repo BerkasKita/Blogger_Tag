@@ -50,7 +50,7 @@ Hasil: `<div class='section footer'></div>`
 ```
 Hasil: `<div class='section footer left'></div>`
 
-### Menambahkan Class Variabel:
+### Menambahkan Class Variabel
 ```
 <div>
   <b:class expr:name='data:view.isHomepage ? "superfooter" : "footer"' />
