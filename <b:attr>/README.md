@@ -53,8 +53,3 @@ Hasil: `<a href='https://BLOG_NAME.blogspot.com/search?label=TOTO'>LINK</a>`
 </a>
 ```
 Hasil: `<a href='https://BLOG_NAME.blogspot.com/' target='_blank' title='PAGE_TITLE'>LINK</a>`
-
-## Catatan Hukum
-```
-README.md ini memberikan penjelasan lengkap mengenai penggunaan tag `<b:attr>` dalam Blogger, termasuk sintaks, atribut yang bisa digunakan, contoh implementasi, dan catatan tambahan untuk memastikan penggunaan yang tepat.
-```
