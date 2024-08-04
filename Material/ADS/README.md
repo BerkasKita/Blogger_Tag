@@ -16,7 +16,7 @@ Gunakan sintaks berikut untuk menempatkan iklan di antara artikel
    + `number` harus berupa angka (0, 1, 2, ...).
    + Jika number melebihi jumlah total artikel, iklan tidak akan muncul.
 
-## Pemasangan
+## Langkah Implementasi:
 1. Cari `<b:includable id='postCommentsAndAd' var='post'>` jika masih menggunakan versi bawaan (Original).
    ```xml
    <b:includable id='postCommentsAndAd' var='post'>
