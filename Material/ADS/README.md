@@ -1,6 +1,8 @@
 # Menambahkan tempat iklan antara artikel
+menambahkan tempat iklan di antara artikel-artikel di Blogger menggunakan sintaks xml.
 
-## Syntax
+## Sintaks untuk Menyisipkan Iklan
+Gunakan sintaks berikut untuk menempatkan iklan di antara artikel
 ```xml
 <b:if cond='data:i == number'>
   <article class='post-outer-container pin'>
@@ -11,9 +13,8 @@
 </b:if>
 ```
 ## Aturan Penggunaan
-   + `number` : posisi atau letak penempatanan (Wajib).
-   + `number` : isi dengan angka (0,1,2,3,...) dan seperti array angka pertama diawali angka `0` bukan angka `1`, seperti 0 untuk artikel pertama, 1 untuk artikel kedua dan seterusmya.
-   + `number` : jika lebih besar dari jumlah artikel maka tidak akan tampil.
+   + `number` harus berupa angka (0, 1, 2, ...).
+   + Jika number melebihi jumlah total artikel, iklan tidak akan muncul.
 
 ## Pemasangan
 1. Cari `<b:includable id='postCommentsAndAd' var='post'>` jika masih menggunakan versi bawaan (Original).
@@ -25,20 +26,8 @@
     <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
    </b:includable>
    ```
-3. Tempel kode ini diatas `<article class='post-outer-container'>...</article>`.
-   ```xml
-   <b:if cond='!data:view.isSingleItem'>
-    <b:if cond='data:i == 0'>
-      <article class='post-outer-container pin'>
-        <div class='ADS'>
-          ADS Is Here
-        </div>
-      </article>
-    </b:if>
-   </b:if>
-   ```
-   dan hasilnya seperti ini
-   
+3. Sisipkan kode yang diberikan di atas baris `<article class='post-outer-container'>...</article>`.
+   Contoh implementasi iklan:
    ```xml
    <b:includable id='postCommentsAndAd' var='post'>
     <b:if cond='!data:view.isSingleItem'>
@@ -56,8 +45,9 @@
     <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
    </b:includable>
    ```
-   
-    jika ingin menambah tempat iklan lagi, tinggal buat Syntax baru
+4. Menambahkan lebih dari 1 tempat iklan
+
+   Untuk menambahkan beberapa iklan, ulangi sintaks dengan nilai number yang berbeda untuk posisi yang berbeda
     ```xml
     <b:if cond='!data:view.isSingleItem'>
       <b:if cond='data:i == 0'>
