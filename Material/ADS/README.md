@@ -1,7 +1,7 @@
 # Menambahkan tempat iklan antara artikel
 menambahkan tempat iklan di antara artikel-artikel di Blogger menggunakan sintaks xml.
 
-## Sintaks untuk Menyisipkan Iklan
+## Sintaks
 Gunakan sintaks berikut untuk menempatkan iklan di antara artikel
 ```xml
 <b:if cond='data:i == number'>
