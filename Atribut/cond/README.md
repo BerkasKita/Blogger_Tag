@@ -48,8 +48,8 @@ cond='data:view.isSingleItem'
 cond='data:blog.pageType in ["item", "static_page"]'
 ```
 Tujuan URL :
-+ https://www.igniel.com/2017/12/tag-blogger.html
-+ https://www.igniel.com/p/about.html
++ https://myblog.blogspot.com/2017/12/tag-blogger.html
++ https://myblog.blogspot.com/p/about.html
 
 #### Halaman Post (Artikel Tunggal)
 ```xml
@@ -59,7 +59,7 @@ cond='data:view.isPost'
 cond='data:blog.pageType == "item"'
 ```
 Tujuan URL :
-+ https://www.igniel.com/2017/12/tag-blogger.html
++ https://myblog.blogspot.com/2017/12/tag-blogger.html
 
 #### Halaman Page (Statis)
 ```xml
@@ -69,14 +69,14 @@ cond='data:view.isPage'
 cond='data:blog.pageType == "static_page"'
 ```
 Tujuan URL :
-+ https://www.igniel.com/p/about.html
++ https://myblog.blogspot.com/p/about.html
 
 #### Halaman URL Tertentu
 ```xml
 cond='data:view.url == data:blog.homepageUrl path "/p/about.html"''
 ```
 Tujuan URL :
-+ https://www.igniel.com/p/about.html
++ https://myblog.blogspot.com/p/about.html
 
 #### Halaman Label
 ```xml
@@ -86,8 +86,8 @@ cond='data:view.isLabelSearch'
 cond='data:blog.searchLabel'
 ```
 Tujuan URL :
-+ https://www.igniel.com/search/label/Blogger
-+ https://www.igniel.com/search?label=Blogger
++ https://myblog.blogspot.com/search/label/Blogger
++ https://myblog.blogspot.com/search?label=Blogger
 
 #### Halaman Pencarian
 Hanya halaman pencarian berdasarkan query.
@@ -95,7 +95,7 @@ Hanya halaman pencarian berdasarkan query.
 cond='data:view.isSearch and !data:view.isLabelSearch'
 ```
 Tujuan URL :
-+ https://www.igniel.com/search?q=query
++ https://myblog.blogspot.com/search?q=query
 Termasuk halaman pencarian label (semua yang mengandung kata "search" di URL)
 ```xml
 //Versi Baru
@@ -104,9 +104,9 @@ cond='data:view.isSearch'
 cond='data:blog.searchQuery'
 ```
 Tujuan URL :
-+ https://www.igniel.com/search?q=query
-+ https://www.igniel.com/search/label/Blogger
-+ https://www.igniel.com/search?label=Blogger
++ https://myblog.blogspot.com/search?q=query
++ https://myblog.blogspot.com/search/label/Blogger
++ https://myblog.blogspot.com/search?label=Blogger
 
 #### Halaman Arsip
 ```xml
@@ -116,9 +116,9 @@ cond='data:view.isArchive'
 cond='data:blog.pageType == "archive"'
 ```
 Tujuan URL :
-+ https://www.igniel.com/2020
-+ https://www.igniel.com/2020/04
-+ https://www.igniel.com/2020_04_14_archive.html
++ https://myblog.blogspot.com/2020
++ https://myblog.blogspot.com/2020/04
++ https://myblog.blogspot.com/2020_04_14_archive.html
 
 #### Halaman Error 404 (Page Not Found)
 ```xml
@@ -128,14 +128,14 @@ cond='data:view.isError'
 cond='data:blog.pageType == "error_page"'
 ```
 Tujuan URL :
-+ https://www.igniel.com/404.html
++ https://myblog.blogspot.com/404.html
 
 #### Halaman Mobile
 ```xml
 cond='data:blog.isMobileRequest'
 ```
 Tujuan URL :
-+ https://www.igniel.com?m=1
++ https://myblog.blogspot.com?m=1
 
 #### Halaman Pratinjau (Preview)
 ```xml
