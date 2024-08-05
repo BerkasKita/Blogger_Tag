@@ -146,3 +146,22 @@ cond='data:view.isPreview'
 ```xml
 cond='data:view.isLayoutMode'
 ```
+
+## Ekspresi Boolean
+Tag kondisional Blogger juga bisa menggunakan NOT, AND, atau OR.
+
++ NOT:
+  Kondisi jika bukan halaman yang dimaksud. Tambahkan tanda seru `!`.
+  ```xml
+  cond='!data:view.isPost'
+  ```
++ AND:
+  Kondisi jika keduanya benar. Tambahkan `AND`.
+  ```xml
+  cond='!data:view.isPost and data:view.isMultipleItems'
+  ```
++ OR:
+  Kondisi jika salah satunya benar. Tambahkan `OR`
+  ```xml
+  cond='data:view.isPost or data:view.isMultipleItems'
+  ```
