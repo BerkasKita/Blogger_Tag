@@ -73,7 +73,7 @@ Tujuan URL :
 
 #### Halaman URL Tertentu
 ```xml
-cond='data:view.url == data:blog.homepageUrl path "/p/about.html"''
+cond='data:view.url == data:blog.homepageUrl path "/p/about.html"'
 ```
 Tujuan URL :
 + https://myblog.blogspot.com/p/about.html
